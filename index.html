@@ -1,0 +1,62 @@
+<!DOCTYPE html> <html><head>
+        <title>Yuri's united project 4 </title>
+        <link href="https://fonts.googleapis.com/css2?family=Garamond" rel="stylesheet">
+    <style>body {
+    font-family: 'Garamond', sans-serif;
+    background-color: pink ;
+    text-align: center;
+}
+
+img {
+    width: 400px;
+}</style></head>
+    <body>
+        <div class="title">
+            <h1>Quiz!  What kind of pizza are you ! </h1>
+        </div>
+
+       
+
+
+
+
+        <div class="questions">
+            <h4>How many cups of water do you drink per day?
+            </h4>
+            <input class="Question1" placeholder="number">
+            <img src="https://www.primerahora.com/resizer/aMCYbOzqccMAZb0HzFEnzcBmmzA=/2560x0/smart/filters:quality(75):format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/gfrmedia/AIMRCFQ23NCGHLMV7SUQKDKVB4.jpg">
+            <h4>Which do you prefer, sweet or salty ? 
+</h4>
+            <input class="Question2" placeholder="Flavor">
+            <img src="https://dailynexus.s3.us-west-1.amazonaws.com/dailynexus/wp-content/uploads/2018/02/Calistas-Article-Sweet-v.-Savory-01.jpg">
+        </div>
+        <button> Click here! </button>
+        <div class="result">
+            this is where the user will see their quiz result!
+        </div>
+
+
+
+    
+<script>
+/*__POPCODESTART__*/
+var input = document.querySelector("input");
+var greeting = document.querySelector(".currentUser");
+var submit = document.querySelector("button");
+
+submit.onclick = function () {
+  var Q1 = document.querySelector(".Question1").value;
+  var Q2 = document.querySelector(".Question2").value;
+  var result = document.querySelector(".result");
+  console.log(Q1);
+  console.log(Q2); //result.innerHTML = (Q2);//
+
+  if (Q1 <= 2 && Q2 === "Sweet") {
+    document.querySelector(".result").innerHTML = "Mushroom Pizza";
+  }
+
+  if (Q1 <= 3 && Q2 === "Salty") {
+    document.querySelector(".result").innerHTML = "Peperoni Pizza.";
+  }
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbImlucHV0IiwiZG9jdW1lbnQiLCJxdWVyeVNlbGVjdG9yIiwiZ3JlZXRpbmciLCJzdWJtaXQiLCJvbmNsaWNrIiwiUTEiLCJ2YWx1ZSIsIlEyIiwicmVzdWx0IiwiY29uc29sZSIsImxvZyIsImlubmVySFRNTCJdLCJtYXBwaW5ncyI6IkFBQUEsSUFBSUEsS0FBSyxHQUFHQyxRQUFRLENBQUNDLGFBQVQsQ0FBdUIsT0FBdkIsQ0FBWjtBQUNBLElBQUlDLFFBQVEsR0FBR0YsUUFBUSxDQUFDQyxhQUFULENBQXVCLGNBQXZCLENBQWY7QUFDQSxJQUFJRSxNQUFNLEdBQUdILFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixRQUF2QixDQUFiOztBQUNBRSxNQUFNLENBQUNDLE9BQVAsR0FBaUIsWUFBVztBQUN4QixNQUFJQyxFQUFFLEdBQUdMLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixZQUF2QixFQUFxQ0ssS0FBOUM7QUFDQSxNQUFJQyxFQUFFLEdBQUdQLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixZQUF2QixFQUFxQ0ssS0FBOUM7QUFDQSxNQUFJRSxNQUFNLEdBQUdSLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixTQUF2QixDQUFiO0FBQ0FRLEVBQUFBLE9BQU8sQ0FBQ0MsR0FBUixDQUFZTCxFQUFaO0FBQ0FJLEVBQUFBLE9BQU8sQ0FBQ0MsR0FBUixDQUFZSCxFQUFaLEVBTHdCLENBT3hCOztBQUVBLE1BQUlGLEVBQUUsSUFBSSxDQUFOLElBQVdFLEVBQUUsS0FBSyxPQUF0QixFQUErQjtBQUMzQlAsSUFBQUEsUUFBUSxDQUFDQyxhQUFULENBQXVCLFNBQXZCLEVBQWtDVSxTQUFsQyxHQUE4QyxnQkFBOUM7QUFDSDs7QUFFRCxNQUFJTixFQUFFLElBQUksQ0FBTixJQUFZRSxFQUFFLEtBQUssT0FBdkIsRUFBZ0M7QUFDNUJQLElBQUFBLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixTQUF2QixFQUFrQ1UsU0FBbEMsR0FBOEMsaUJBQTlDO0FBQWlFO0FBQ3hFLENBZkQiLCJzb3VyY2VzQ29udGVudCI6WyJsZXQgaW5wdXQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiaW5wdXRcIik7XG5sZXQgZ3JlZXRpbmcgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLmN1cnJlbnRVc2VyXCIpO1xubGV0IHN1Ym1pdCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCJidXR0b25cIik7XG5zdWJtaXQub25jbGljayA9IGZ1bmN0aW9uKCkge1xuICAgIGxldCBRMSA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuUXVlc3Rpb24xXCIpLnZhbHVlO1xuICAgIGxldCBRMiA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuUXVlc3Rpb24yXCIpLnZhbHVlO1xuICAgIGxldCByZXN1bHQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnJlc3VsdFwiKTtcbiAgICBjb25zb2xlLmxvZyhRMSk7XG4gICAgY29uc29sZS5sb2coUTIpO1xuXG4gICAgLy9yZXN1bHQuaW5uZXJIVE1MID0gKFEyKTsvL1xuXG4gICAgaWYgKFExIDw9IDIgJiYgUTIgPT09IFwiU3dlZXRcIikge1xuICAgICAgICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnJlc3VsdFwiKS5pbm5lckhUTUwgPSBcIk11c2hyb29tIFBpenphXCI7XG4gICAgfVxuXG4gICAgaWYgKFExIDw9IDMgICYmIFEyID09PSBcIlNhbHR5XCIpIHtcbiAgICAgICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5yZXN1bHRcIikuaW5uZXJIVE1MID0gXCJQZXBlcm9uaSBQaXp6YS5cIjt9XG59OyJdfQ==</script></body></html>
